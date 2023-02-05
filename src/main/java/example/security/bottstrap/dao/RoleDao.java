@@ -1,6 +1,7 @@
-package ru.alexeykedr.springbootbootstrap.dao;
+package example.security.bottstrap.dao;
 
-import ru.alexeykedr.springbootbootstrap.model.Role;
+import example.security.bottstrap.model.Role;
+
 import java.util.List;
 
 public interface RoleDao {

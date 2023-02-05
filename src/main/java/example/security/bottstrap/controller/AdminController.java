@@ -1,8 +1,8 @@
-package ru.alexeykedr.springbootbootstrap.controller;
+package example.security.bottstrap.controller;
 
-import ru.alexeykedr.springbootbootstrap.model.User;
-import ru.alexeykedr.springbootbootstrap.service.RoleService;
-import ru.alexeykedr.springbootbootstrap.service.UserService;
+import example.security.bottstrap.model.User;
+import example.security.bottstrap.service.RoleService;
+import example.security.bottstrap.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;

@@ -1,4 +1,4 @@
-package ru.alexeykedr.springbootbootstrap.model;
+package example.security.bottstrap.model;
 
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;

@@ -1,7 +1,7 @@
-package ru.alexeykedr.springbootbootstrap.service;
+package example.security.bottstrap.service;
 
-import ru.alexeykedr.springbootbootstrap.dao.RoleDao;
-import ru.alexeykedr.springbootbootstrap.model.Role;
+import example.security.bottstrap.dao.RoleDao;
+import example.security.bottstrap.model.Role;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

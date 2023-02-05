@@ -1,7 +1,7 @@
-package ru.alexeykedr.springbootbootstrap.service;
+package example.security.bottstrap.service;
 
-import ru.alexeykedr.springbootbootstrap.dao.UserDao;
-import ru.alexeykedr.springbootbootstrap.model.User;
+import example.security.bottstrap.dao.UserDao;
+import example.security.bottstrap.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.security.core.userdetails.UserDetails;

@@ -1,6 +1,6 @@
-package ru.alexeykedr.springbootbootstrap.dao;
+package example.security.bottstrap.dao;
 
-import ru.alexeykedr.springbootbootstrap.model.User;
+import example.security.bottstrap.model.User;
 import org.springframework.stereotype.Repository;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;

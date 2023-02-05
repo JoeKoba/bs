@@ -1,6 +1,6 @@
-package ru.alexeykedr.springbootbootstrap.service;
+package example.security.bottstrap.service;
 
-import ru.alexeykedr.springbootbootstrap.model.User;
+import example.security.bottstrap.model.User;
 import java.util.List;
 
 public interface UserService {
