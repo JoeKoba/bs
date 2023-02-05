@@ -67,7 +67,7 @@
                                     <tr th:each="user : ${users}">
                                         <td th:text="${user.id}">id</td>
                                         <td th:text="${user.firstName}">name</td>
-                                        <td th:text="${user.surname}">surname</td>
+                                        <td th:text="${user.lastName}">lastName</td>
                                         <td th:text="${user.age}">age</td>
                                         <td th:text="${user.email}">email</td>
                                         <td th:text="${user.login}">login</td>
@@ -96,15 +96,15 @@
                                                           th:object="${user}" th:method="PUT">
                                                         <div class="modal-body col-md text-center">
                                                             <br>
-                                                            <label for="name0"><b>Name</b></label>
-                                                            <input th:name="name" th:type="text"
-                                                                   class="form-control" id="name0"
+                                                            <label for="firstName"><b>Name</b></label>
+                                                            <input th:name="firstName" th:type="text"
+                                                                   class="form-control" id="firstName"
                                                                    th:value="${user.firstName}"/>
                                                             <br>
-                                                            <label for="surname0"><b>Surname</b></label>
-                                                            <input th:name="surname" th:type="text"
-                                                                   class="form-control" id="surname0"
-                                                                   th:value="${user.surname}"/>
+                                                            <label for="lastName"><b>Surname</b></label>
+                                                            <input th:name="lastName" th:type="text"
+                                                                   class="form-control" id="lastName"
+                                                                   th:value="${user.lastName}"/>
                                                             <br>
                                                             <label for="age0"><b>Age</b></label>
                                                             <input th:name="age" th:type="number"
@@ -174,7 +174,7 @@
                                                             <label for="surname1"><b>Surname</b></label>
                                                             <input th:name="surname" th:type="text"
                                                                    class="form-control" id="surname1"
-                                                                   th:value="${user.surname}" disabled/>
+                                                                   th:value="${user.lastName}" disabled/>
                                                             <br>
                                                             <label for="age1"><b>Age</b></label>
                                                             <input th:name="age" th:type="number"

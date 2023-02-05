@@ -16,6 +16,7 @@ import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 import java.util.Collection;
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
 @Entity
@@ -30,7 +31,7 @@ public class User implements UserDetails {
     private String firstName;
 
     @Column(name = "surname")
-    private String surname;
+    private String lastName;
 
     @Column(name = "age")
     private int age;
@@ -54,9 +55,9 @@ public class User implements UserDetails {
     public User() {
     }
 
-    public User(String firstName, String surname, int age, String email, String login, String password, Set<Role> roles) {
+    public User(String firstName, String lastName, int age, String email, String login, String password, Set<Role> roles) {
         this.firstName = firstName;
-        this.surname = surname;
+        this.lastName = lastName;
         this.age = age;
         this.email = email;
         this.login = login;
@@ -80,12 +81,12 @@ public class User implements UserDetails {
         this.firstName = firstName;
     }
 
-    public String getSurname() {
-        return surname;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setSurname(String surname) {
-        this.surname = surname;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public int getAge() {
@@ -159,11 +160,24 @@ public class User implements UserDetails {
     }
 
     @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return Objects.equals(id, user.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
+    }
+
+    @Override
     public String toString() {
         return "User{" +
                 "id=" + id +
                 ", name='" + firstName + '\'' +
-                ", surname='" + surname + '\'' +
+                ", surname='" + lastName + '\'' +
                 ", age=" + age +
                 ", email='" + email + '\'' +
                 '}';
