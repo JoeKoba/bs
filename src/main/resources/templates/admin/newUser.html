@@ -13,7 +13,7 @@
 <nav class="navbar navbar-dark bg-dark">
     <div class="container-fluid">
         <p class="navbar-brand text-white">
-            <b><span class="align-middle" th:text="${user.login}"></span></b>
+            <b><span class="align-middle" th:text="${user.email}"></span></b>
             <span class="align-middle">with roles:</span>
             <span class="align-middle" th:text="${user.roles}"></span>
         </p>
@@ -64,9 +64,6 @@
                                 <br>
                                 <label for="email"><b>Email</b></label>
                                 <input th:name="email" th:type="text" class="form-control" id="email" required/>
-                                <br>
-                                <label for="login"><b>Login</b></label>
-                                <input th:name="login" th:type="text" class="form-control" id="login" required/>
                                 <br>
                                 <label for="password"><b>Password</b></label>
                                 <input th:name="password" th:field="*{password}" th:type="password" class="form-control"

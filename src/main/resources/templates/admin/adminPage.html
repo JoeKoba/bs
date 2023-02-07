@@ -14,7 +14,7 @@
 <nav class="navbar navbar-dark bg-dark">
     <div class="container-fluid">
         <p class="navbar-brand text-white">
-            <b><span class="align-middle" th:text="${user.login}"></span></b>
+            <b><span class="align-middle" th:text="${user.email}"></span></b>
             <span class="align-middle">with roles:</span>
             <span class="align-middle" th:text="${user.roles}"></span>
         </p>
@@ -59,7 +59,6 @@
                                         <th>Surname</th>
                                         <th>Age</th>
                                         <th>Email</th>
-                                        <th>Login</th>
                                         <th>Role</th>
                                         <th>Edit</th>
                                         <th>Delete</th>
@@ -70,7 +69,6 @@
                                         <td th:text="${user.lastName}">lastName</td>
                                         <td th:text="${user.age}">age</td>
                                         <td th:text="${user.email}">email</td>
-                                        <td th:text="${user.login}">login</td>
                                         <td th:text="${user.roles}">roles</td>
                                         <td>
                                             <a type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal"
@@ -119,7 +117,7 @@
                                                             <label for="login0"><b>Login</b></label>
                                                             <input th:name="login" th:type="text"
                                                                    class="form-control" id="login0"
-                                                                   th:value="${user.login}"/>
+                                                                   th:value="${user.email}"/>
                                                             <br>
                                                             <label for="password0"><b>Password</b></label>
                                                             <input th:name="password" type="text"
@@ -189,7 +187,7 @@
                                                             <label for="login1"><b>Age</b></label>
                                                             <input th:name="login" th:type="text"
                                                                    class="form-control"
-                                                                   id="login1" th:value="${user.login}" disabled/>
+                                                                   id="login1" th:value="${user.email}" disabled/>
                                                             <br>
                                                         </div>
 
@@ -221,3 +219,4 @@
 
 </body>
 </html>
+
